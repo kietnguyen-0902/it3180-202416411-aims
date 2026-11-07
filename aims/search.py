@@ -1,1 +1,5 @@
-# fix: case insensitive search
+def search_by_category(items, category):
+    return [dvd for dvd in items if category.lower() in dvd.category.lower()]
+
+def search_by_title(items, keyword):
+    return [dvd for dvd in items if keyword.lower() in dvd.title.lower()]
