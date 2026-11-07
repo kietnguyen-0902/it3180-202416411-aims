@@ -45,3 +45,4 @@ class Cart:
 
     def sort_by_cost(self):
         self.items.sort(key=lambda x: x.cost, reverse=True)
+# fix: reject condition
